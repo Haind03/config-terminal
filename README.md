@@ -22,6 +22,6 @@ source ~/.profile
 
 ![image](https://user-images.githubusercontent.com/91616280/208253935-864b5d3c-1c0a-4994-a2a8-587c2c3c21ed.png)
 
-- You can see more themes at oh-my-post.
+- You can see more themes at <td markdown="span"><a href="https://ohmyposh.dev/docs/themes">oh my post themes.</a></td>.
 
 
