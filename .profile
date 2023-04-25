@@ -26,3 +26,12 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 eval "$(oh-my-posh init bash --config ~/themes/montys.omp.json)"
+# ASLR
+alias aslrcheck='cat /proc/sys/kernel/randomize_va_space'
+
+alias aslroff="echo 0 | sudo tee /proc/sys/kernel/randomize_va_space"
+
+alias aslron="echo 2 | sudo tee /proc/sys/kernel/randomize_va_space"
+
+export PATH=/usr/local/go/bin:$PATH
+export C_INCLUDE_PATH=/usr/include
