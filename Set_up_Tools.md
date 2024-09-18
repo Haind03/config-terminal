@@ -80,7 +80,9 @@
   sudo apt install golang
   go env GOPATH
   export PATH=$PATH:/home/haind/go/bin
-  sudo snap install sqlmap 
+  go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+  sudo snap install sqlmap
+  sudo apt install dirsearch
   ```
 - Thêm vào `~/.profile` `export PATH=$PATH:/home/haind/go/bin`
   
