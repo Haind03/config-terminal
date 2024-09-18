@@ -77,7 +77,12 @@
   sudo apt install unzip
   sudo apt install sshpass
   sudo apt install rar
+  sudo apt install golang
+  go env GOPATH
+  export PATH=$PATH:/home/haind/go/bin
   ```
+- Thêm vào `~/.profile` `export PATH=$PATH:/home/haind/go/bin`
+  
 - Libraries 
   ```
   python3 -m pip install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython z3-solver
