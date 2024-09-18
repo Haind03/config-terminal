@@ -44,7 +44,6 @@
 
 - Sau khi cài xong thêm vào `~/.profile`
   ```
-   Halston      ﮫ 1m 15.146s   6:41 PM  
    ⚡haind ❯❯ cat ~/.profile
 
   if [ -n "$BASH_VERSION" ]; then
