@@ -37,10 +37,40 @@
 - Ví dụ:
   ```
   sudo apt install python3.8 python3.8-venv
-python3.8 -m venv pwnenv
-source ~/pwnenv/bin/activate
-python3 -m pip install --upgrade pip
+  python3.8 -m venv pwnenv
+  source ~/pwnenv/bin/activate
+  python3 -m pip install --upgrade pip
   ```
+
+- Sau khi cài xong thêm vào `~/.profile`
+  ```
+   Halston      ﮫ 1m 15.146s   6:41 PM  
+   ⚡haind ❯❯ cat ~/.profile
+
+  if [ -n "$BASH_VERSION" ]; then
+      # include .bashrc if it exists
+      if [ -f "$HOME/.bashrc" ]; then
+          . "$HOME/.bashrc"
+      fi
+  fi
+  
+  if [ -d "$HOME/bin" ] ; then
+      PATH="$HOME/bin:$PATH"
+  fi
+  
+  if [ -d "$HOME/.local/bin" ] ; then
+      PATH="$HOME/.local/bin:$PATH"
+  fi
+  source ~/pwnenv/bin/activate
+  eval "$(oh-my-posh init bash --config /home/haind/terminal/montys.omp.json)"
+  
+  alias aslrcheck='cat /proc/sys/kernel/randomize_va_space'
+  
+  alias aslroff="echo 0 | sudo tee /proc/sys/kernel/randomize_va_space"
+  
+  alias aslron="echo 2 | sudo tee /proc/sys/kernel/randomize_va_space"
+  ```
+
 ## Docker
 - Cài các gói docker.
   ```
