@@ -80,6 +80,7 @@
   sudo apt install golang
   go env GOPATH
   export PATH=$PATH:/home/haind/go/bin
+  sudo snap install sqlmap 
   ```
 - Thêm vào `~/.profile` `export PATH=$PATH:/home/haind/go/bin`
   
