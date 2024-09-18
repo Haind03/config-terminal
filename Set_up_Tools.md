@@ -71,6 +71,17 @@
   alias aslron="echo 2 | sudo tee /proc/sys/kernel/randomize_va_space"
   ```
 
+## Tools and Libraries
+- Zip
+  ```
+  sudo apt update
+  sudo apt install unzip
+  ```
+- Libraries pwntools
+  ```
+  python3 -m pip install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
+  ```
+
 ## Docker
 - Cài các gói docker.
   ```
