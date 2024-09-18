@@ -72,14 +72,16 @@
   ```
 
 ## Tools and Libraries
-- Zip
+- Tools
   ```
   sudo apt update
   sudo apt install unzip
+  sudo apt install sshpass
+  sudo apt install rar
   ```
-- Libraries pwntools
+- Libraries 
   ```
-  python3 -m pip install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
+  python3 -m pip install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython z3-solver
   ```
 
 ## Docker
