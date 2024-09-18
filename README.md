@@ -2,6 +2,10 @@
 
 ## Ubuntu
 
+- Cài oh-my-posh
+```
+  curl -s https://ohmyposh.dev/install.sh | bash -s
+```
 - Copy in folder .profile to `~/.profile`
 
 - Use the following command to edit the profile file in bash.
