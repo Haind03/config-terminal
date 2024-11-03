@@ -8,12 +8,30 @@
             "keys": "ctrl+v"
         },
         {
+            "command": "toggleAlwaysOnTop",
+            "keys": "alt+shift+f11"
+        },
+        {
             "command": 
             {
                 "action": "copy",
                 "singleLine": false
             },
             "keys": "ctrl+c"
+        },
+        {
+            "command": 
+            {
+                "action": "commandPalette"
+            },
+            "keys": "ctrl+shift+p"
+        },
+        {
+            "command": 
+            {
+                "action": "newTab"
+            },
+            "keys": "ctrl+t"
         },
         {
             "command": "unbound",
@@ -24,10 +42,6 @@
             "keys": "ctrl+w"
         },
         {
-            "command": "toggleAlwaysOnTop",
-            "keys": "alt+shift+f11"
-        },
-        {
             "command": 
             {
                 "action": "splitPane"
@@ -35,22 +49,8 @@
             "keys": "ctrl+shift+minus"
         },
         {
-            "command": 
-            {
-                "action": "newTab"
-            },
-            "keys": "ctrl+t"
-        },
-        {
             "command": "toggleFocusMode",
             "keys": "shift+f11"
-        },
-        {
-            "command": 
-            {
-                "action": "commandPalette"
-            },
-            "keys": "ctrl+shift+p"
         },
         {
             "command": 
@@ -76,8 +76,13 @@
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-    "firstWindowPreference": "persistedWindowLayout",
+    "defaultProfile": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": {},
@@ -86,63 +91,92 @@
             {
                 "colorScheme": "One Half Dark",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "adjustIndistinguishableColors": "indexed",
+                "cursorShape": "underscore",
                 "font": 
                 {
+                    "cellHeight": "1.5",
                     "face": "FiraCode Nerd Font Mono",
-                    "size": 13
+                    "size": 11.0
                 },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
                 "name": "Windows PowerShell"
             },
             {
+                "adjustIndistinguishableColors": "indexed",
                 "colorScheme": "One Half Dark",
-                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "cursorShape": "underscore",
                 "font": 
                 {
+                    "cellHeight": "1.5",
                     "face": "FiraCode Nerd Font Mono",
-                    "size": 13
+                    "size": 11.0
                 },
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
             },
             {
+                "adjustIndistinguishableColors": "indexed",
                 "colorScheme": "One Half Dark",
+                "cursorShape": "underscore",
                 "font": 
                 {
+                    "cellHeight": "1.5",
                     "face": "FiraCode Nerd Font Mono",
-                    "size": 13
+                    "size": 11.0
+                },
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "adjustIndistinguishableColors": "indexed",
+                "colorScheme": "One Half Dark",
+                "cursorShape": "underscore",
+                "font": 
+                {
+                    "cellHeight": "1.5",
+                    "face": "FiraCode Nerd Font Mono",
+                    "size": 11.0
+                },
+                "guid": "{47410304-b1d5-52c6-99f0-1d4da1667b16}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "adjustIndistinguishableColors": "indexed",
+                "colorScheme": "One Half Dark",
+                "cursorShape": "underscore",
+                "font": 
+                {
+                    "cellHeight": "1.5",
+                    "face": "FiraCode Nerd Font Mono",
+                    "size": 11.0
+                },
+                "guid": "{a19f9293-12f9-5107-906f-f43316c7ebfb}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "adjustIndistinguishableColors": "indexed",
+                "colorScheme": "One Half Dark",
+                "cursorShape": "underscore",
+                "font": 
+                {
+                    "cellHeight": "1.5",
+                    "face": "FiraCode Nerd Font Mono",
+                    "size": 11.0
                 },
                 "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
                 "hidden": false,
+                "intenseTextStyle": "all",
                 "name": "kali-linux",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "colorScheme": "One Half Dark",
-                "commandline": "\"C:\\Users\\ndinh\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe\"",
-                "font": 
-                {
-                    "face": "FiraCode Nerd Font Mono",
-                    "size": 13
-                },
-                "guid": "{a97d7fab-de27-4e90-8ae9-5b7c7ab1b739}",
-                "hidden": false,
-                "icon": "ms-appx:///ProfileIcons/pwsh.png",
-                "name": "PowerShell",
-                "startingDirectory": "%USERPROFILE%"
-            },
-            {
-                "colorScheme": "One Half Dark",
-                "font": 
-                {
-                    "face": "FiraCode Nerd Font Mono",
-                    "size": 13
-                },
-                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-                "hidden": false,
-                "name": "Ubuntu-20.04",
+                "scrollbarState": "always",
                 "source": "Windows.Terminal.Wsl"
             }
         ]
@@ -237,7 +271,7 @@
             "name": "One Half Light",
             "purple": "#A626A4",
             "red": "#E45649",
-            "selectionBackground": "#FFFFFF",
+            "selectionBackground": "#4F525D",
             "white": "#FAFAFA",
             "yellow": "#C18301"
         },
@@ -283,7 +317,7 @@
             "name": "Solarized Light",
             "purple": "#D33682",
             "red": "#DC322F",
-            "selectionBackground": "#FFFFFF",
+            "selectionBackground": "#073642",
             "white": "#EEE8D5",
             "yellow": "#B58900"
         },
@@ -329,32 +363,9 @@
             "name": "Tango Light",
             "purple": "#75507B",
             "red": "#CC0000",
-            "selectionBackground": "#FFFFFF",
+            "selectionBackground": "#555753",
             "white": "#D3D7CF",
             "yellow": "#C4A000"
-        },
-        {
-            "background": "#300A24",
-            "black": "#171421",
-            "blue": "#0037DA",
-            "brightBlack": "#767676",
-            "brightBlue": "#08458F",
-            "brightCyan": "#2C9FB3",
-            "brightGreen": "#26A269",
-            "brightPurple": "#A347BA",
-            "brightRed": "#C01C28",
-            "brightWhite": "#F2F2F2",
-            "brightYellow": "#A2734C",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#3A96DD",
-            "foreground": "#FFFFFF",
-            "green": "#26A269",
-            "name": "Ubuntu-ColorScheme",
-            "purple": "#881798",
-            "red": "#C21A23",
-            "selectionBackground": "#FFFFFF",
-            "white": "#CCCCCC",
-            "yellow": "#A2734C"
         },
         {
             "background": "#000000",
@@ -379,5 +390,6 @@
             "white": "#C0C0C0",
             "yellow": "#808000"
         }
-    ]
+    ],
+    "themes": []
 }
